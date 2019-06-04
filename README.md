@@ -28,7 +28,8 @@ $ pip3 install psycopg2-binary #needed to run postgresql db
 $ python3 app.py
 
 working on getting the following pieces of data to display using the following sql commands:
-1)	Top 10 “stops” by weight over the past 12 months  
+1)	Top 10 “stops” by weight over the past 12 months
+
 SELECT SUM (flourAmt)   
 FROM deliveries  
 WHERE date > DATEADD(year,-1,GETDATE())   
@@ -36,7 +37,8 @@ GROUP BY location
 ORDER BY flourAmt DESC  
 LIMIT 10;   
 
-2)	Average weight per delivery, listed by “stop” for each month  
+2)	Average weight per delivery, listed by “stop” for each month
+
 SELECT AVG (flourAmt)   
 FROM deliveries  
 WHERE date > DATEADD(month,-1,GETDATE())   
