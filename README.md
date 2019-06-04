@@ -4,8 +4,7 @@ Optimizing a fleet of trucks that are delivering flour! Bake all the cakes!
 
 It's a work in progress:
 
-I'm using Python, Flask, Peewee, Postgres, and may add JS or a call to the google maps API,
-I also thought about adding the google maps api to it
+I'm using Python, Flask, Peewee, Postgres, and may add JS or a call to the google maps API
 #### In order to create the database, I ran the following commands in the terminal: 
 
 $ CREATE DATABASE flourdeliveries;  
