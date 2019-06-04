@@ -18,16 +18,16 @@ $ CREATE TABLE deliveries (id SERIAL PRIMARY KEY, flourAmt INTEGER, deliveryDate
 
 In order to run the app use the following commands:
 
-1) install virtual env
-$ pip3 install virtualenv
-$ virtualenv .env -p python3
-$ source .env/bin/activate
+1) install virtual env  
+$ pip3 install virtualenv    
+$ virtualenv .env -p python3   
+$ source .env/bin/activate    
 
-2) install dependencies
-$ pip3 install flask #installs flask, the python microframework 
-$ pip3 install peewee #installs peewee ORM 
+2) install dependencies . 
+$ pip3 install flask #installs flask, the python microframework   
+$ pip3 install peewee #installs peewee ORM   
 $ pip3 install psycopg2-binary #needed to run postgresql db
-
-3) try running app
+  
+3) try running app . 
 $ python3 app.py
 
