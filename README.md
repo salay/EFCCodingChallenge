@@ -6,11 +6,11 @@ It's a work in progress:
 
 I'm using Python, Flask, Peewee, Postgres, and may add JS or a call to the google maps API,
 I also thought about adding the google maps api to it
-# In order to create the database, I ran the following commands in the terminal: 
-# CREATE DATABASE flourdeliveries;
-# CREATE TABLE location (id SERIAL PRIMARY KEY, name VARCHAR(200), address VARCHAR(255));
-# CREATE TABLE truck (id SERIAL PRIMARY KEY, region VARCHAR(255), flourCapacity INTEGER;
-# CREATE TABLE deliveries (id SERIAL PRIMARY KEY, flourAmt INTEGER, deliveryDatetime TIMESTAMP, truck_id INTEGER REFERENCES truck(id), location_id INTEGER REFERENCES location(id));
+#### In order to create the database, I ran the following commands in the terminal: 
+$ CREATE DATABASE flourdeliveries;
+$ CREATE TABLE location (id SERIAL PRIMARY KEY, name VARCHAR(200), address VARCHAR(255));
+$ CREATE TABLE truck (id SERIAL PRIMARY KEY, region VARCHAR(255), flourCapacity INTEGER;
+$ CREATE TABLE deliveries (id SERIAL PRIMARY KEY, flourAmt INTEGER, deliveryDatetime TIMESTAMP, truck_id INTEGER REFERENCES truck(id), location_id INTEGER REFERENCES location(id));
 
 In order to run the app use the following commands:
 
